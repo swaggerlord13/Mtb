@@ -1,0 +1,154 @@
+body {
+    font-family: 'Balto';
+    align-content: center;
+    font-size: 20px;
+    margin: 0;
+
+}
+h1{
+    font-size: 50px;
+    font-family: 'Balto';
+}
+
+@font-face {
+    font-family: 'Balto';
+    src: local('Balto Light'), local('Balto-Light'),
+        url('Balto-Light.woff2') format('woff2'),
+        url('Balto-Light.woff') format('woff'),
+        url('Balto-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+.log {
+    font-family: 'Balto';
+    color: #007856;
+}
+.content {
+    display: flex;
+    justify-content: center;
+}
+button{
+    background-color: #007856;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 30%;
+    font-size: 18px;
+    
+}
+@media screen and (max-width: 900px){
+    button{
+    font-size: 14px;
+    }
+    h1{
+        font-size: 30px;
+    }
+}
+button:hover {
+    opacity: 0.8;
+}
+input[type=text], input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+a:link {
+    color: #007856;
+    text-decoration: none;
+}
+a:visited{
+    color: #007856;
+    text-decoration: none;
+}
+a:hover{
+    opacity: 0.8;
+    text-decoration: underline;
+    
+}
+.header{
+    background: rgba(0, 0, 0, 0) linear-gradient(rgb(70, 158, 55) 0%, rgb(64, 130, 83) 40%, rgb(0, 123, 85) 70%) repeat scroll 0% 0%;
+    background-color: rgba(0, 0, 0, 0);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: linear-gradient(rgb(70, 158, 55) 0%, rgb(64, 130, 83) 40%, rgb(0, 123, 85) 70%);
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 70px;
+}
+@media (max-width: 767px) {
+.header{
+  height: 70px;
+}
+}
+.header-logo{
+display: flex;
+justify-content: center;
+position: absolute;
+bottom: 50%;
+right: 50%;
+transform: translate(50%, 50%);
+order: 2;
+margin-top: 0;
+}
+a.accordion{
+color: #007856 !important;
+margin: 0 !important;
+cursor: pointer;
+position: relative;
+}
+a.accordion:not(.goto)::after {
+    background-image: url(https://locations.mtb.com/permanent-b0b701/assets/images/chevron_down.8adc6731.svg);
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 0.875rem;
+    width: 0.875rem;
+    margin-left: 1rem;
+    position: absolute;
+    right: -2rem;
+    bottom: 0;
+}
+a.accordion.-expanded:not(.goto)::after {
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+    bottom: auto;
+    top: 0;
+}
+::before, ::after {
+box-sizing: inherit;
+}
+ul.accordion {
+    display: none;
+}
+
+
+.personal-business{
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+.personal-business li{
+    display: inline;
+}
+textarea {
+    display: none;
+    
+}
